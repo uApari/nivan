@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+  <script src="script1.js"></script>
+  <title>Karar Ani</title>
+  <audio id="lightSideSound" src="https://assets.codepen.io/605876/lightsaber-hum.mp3" volume="0.2"></audio>
+<audio id="darkSideSound" src="https://assets.codepen.io/605876/lightsaber-hum.mp3" volume="0.2"></audio>
+<audio id="lightSideClick" src="https://soundfxcenter.com/movies/star-wars/8d82b5_Star_Wars_Cantina_Theme_Song.mp3" volume="0.2"></audio>
+<audio id="darkSideClick" src="no.mp3" volume="0.2"></audio>
+
+</head>
+<body>
+    
+
+    
+  <div class="container">
+    <p  class="glowing-text" style="font-size: 58px;">bu haqda ne deyirsen?</p>
+      
+    <button class="lightsaber light-side" onmouseover="playLightSideSound()" onclick="playLightSideClick(); handleLeftButtonClick()">əvət</button>
+    <button class="lightsaber dark-side" onmouseover="playDarkSideSound()" onclick="playDarkSideClick(); handleRightButtonClick()">yox</button>
+    
+    <div id="gifContainer"></div>
+  </div>
+
+  
+</body>
+</html>
